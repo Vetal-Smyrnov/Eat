@@ -1,0 +1,34 @@
+<header>
+  <!--СОЗДАЕМ LOGO-->
+  <section>
+    <div>
+      <a href="">GEKTOR</a>
+    </div>
+    <ul>
+      <li><a href="">About us</a></li>
+      <li><a href="">Services</a></li>
+      <li><a href="">Booking</a></li>
+      <li><a href="">Gallery</a></li>
+      <li><a href="">Reviews</a></li>
+      <li><a href="">Contacts</a></li>
+    </ul>
+    <div>
+      <!-- Логіка для зміни мови -->
+
+      <div class="language-switcher">
+        <button onclick="switchLanguage('en')">EN</button>
+        <a href="">|</a>
+        <button onclick="switchLanguage('ua')">UA</button>
+      </div>
+      <script>
+        function switchLanguage(language) {
+          if (language === "en") {
+            window.location.href = "/en";
+          } else if (language === "ua") {
+            window.location.href = "/ua";
+          }
+        }
+      </script>
+    </div>
+  </section>
+</header>
